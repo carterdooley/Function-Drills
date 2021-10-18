@@ -6,6 +6,12 @@
 
 //CODE HERE
 
+function helloWorld (){
+    console.log('Hello World')
+}
+
+helloWorld()
+
 
 ////////////////// PROBLEM 2 ////////////////////
 /*
@@ -16,6 +22,11 @@
 
 //CODE HERE
 
+function printName (name){
+    console.log(name)
+}
+
+printName('Carter')
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -30,6 +41,12 @@
 
 //CODE HERE
 
+function greeting(name){
+    stringName = "Hello, " + String(name) 
+    console.log(stringName)
+}
+
+greeting('Jake')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -40,6 +57,14 @@
 */
 
 //CODE HERE
+
+function add(a , b){
+a = Number(a)
+b = Number(b)
+console.log(a + b)   
+}
+
+let sum = add(1 , 2)
 
 
 ////////////////// PROBLEM 5 ////////////////////
@@ -53,6 +78,17 @@
 
 //CODE HERE
 
+function nameCheck(name1){
+    if (name1 === "Steven") {
+        console.log("What is up Steven")
+    } else if (name1 === "Bryan") {
+        console.log("Hey Bryan")
+    }else {
+        console.log("Cool name " + String(name1))
+    }
+}
+
+nameCheck("Steven")
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -66,6 +102,22 @@
 
 //CODE HERE
 
+function favColorFinder (color) {
+    color = String(color)
+    lowerCaseColor = color.toLowerCase()
+    if (lowerCaseColor === 'red') {
+        console.log("Red is a great color")
+    } else if (lowerCaseColor === 'green'){
+        console.log("Green is a solid favorite color")
+    } else if (lowerCaseColor === 'black') {
+        console.log("So trendy")
+    }else {
+        console.log("You need to evaluate your favorite color choice")
+    }
+}
+
+let colorRating = favColorFinder('Red')
+
 
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -77,6 +129,14 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 
 //CODE HERE
 
+function printAllNames (arrayNames) {
+    for (i = 0; i < arrayNames.length; i++){
+        console.log(arrayNames[i])
+    }
+}
+
+printAllNames(namesArr)
+
 
 ////////////////// PROBLEM 8 ////////////////////
 /*
@@ -87,6 +147,16 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
 */
 
 //CODE HERE
+
+function thatsOdd(number) {
+    if (number % 2 === 0){
+        console.log("That's not odd")
+    } else {
+        console.log("That is odd indeed")
+    }
+}
+
+let oddChecker = thatsOdd(5)
 
 
 ////////////////// PROBLEM 9 ////////////////////
@@ -102,6 +172,20 @@ let bigOrSmallArray = [1,101, 102, 2, 103, 4, 5, 6, 107]
 
 //CODE HERE
 
+function bigOrSmall (arr) {
+    let answers1 = []
+    for (x = 0; x < arr.length; x++) {
+        if (arr[x] <= 100){
+            answers1.push('small')
+        } else if (arr[x] > 100) {
+            answers1.push('big')
+        }
+    }
+    console.log(answers1)
+}
+
+let arrayEvaluator = bigOrSmall(bigOrSmallArray)
+
 
 ////////////////// PROBLEM 10 ////////////////////
 let contestants = ['Katniss', 'Peeta', 'Fox-face', 'Glimmer', 'Cato', 'Rue', 'Thresh', 'Clove', 'Marvel']
@@ -113,6 +197,16 @@ let loser = 'Glimmer'
 
 //CODE HERE
 
+function theEliminator(contestants, loser) {
+    for (h = 0; h < contestants.length; h++){
+        if (contestants[h] == 'Glimmer') {
+            loser = contestants.slice(h , 1)
+        } return contestants
+    } console.log(contestants)
+}
+
+console.log(theEliminator(contestants))
+
 
 ////////////////// PROBLEM 11 ////////////////////
 let sampleString = "Hi, my name is Kylo."
@@ -123,6 +217,11 @@ let sampleString = "Hi, my name is Kylo."
 
 //CODE HERE
 
+function myFunction (str) {
+    console.log(str.toUpperCase())
+}
+
+myFunction('carter')
 
 ////////////////// PROBLEM 12 ////////////////////
 /*
@@ -135,6 +234,22 @@ let sampleString = "Hi, my name is Kylo."
   return 'must provide a valid email address'
 */
 
+//CODE HERE
+
+function emailCheck (email){
+    email = String(email)
+    email = email.trim()
+    theValue = email.includes('@')
+    if (theValue === true) {
+        return "Email Verified"
+    } else {
+        return "Must provide valid email address"
+    }
+
+}
+
+console.log(emailCheck('carter.j.dooley43@gmail.com'))
+
 ////////////////// PROBLEM 13 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
@@ -142,6 +257,10 @@ let sampleString = "Hi, my name is Kylo."
 */
 
 //CODE HERE
+
+function getTheChocoFroggo (savings){
+
+}
 
 
 ////////////////// PROBLEM 14 ////////////////////
