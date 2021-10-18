@@ -22,11 +22,11 @@ helloWorld()
 
 //CODE HERE
 
-function printName (name){
-    console.log(name)
+function printName (name1, name2){
+    console.log(name1, name2)
 }
 
-printName('Carter')
+printName('Carter', 'Dooley')
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -61,11 +61,11 @@ greeting('Jake')
 function add(a , b){
 a = Number(a)
 b = Number(b)
-console.log(a + b)   
+return a + b   
 }
 
-let sum = add(1 , 2)
-
+let sum = add('1' , 2)
+console.log(sum)
 
 ////////////////// PROBLEM 5 ////////////////////
 /*
@@ -80,15 +80,15 @@ let sum = add(1 , 2)
 
 function nameCheck(name1){
     if (name1 === "Steven") {
-        console.log("What is up Steven")
+        return "What is up Steven"
     } else if (name1 === "Bryan") {
-        console.log("Hey Bryan")
+        return "Hey Bryan"
     }else {
-        console.log("Cool name " + String(name1))
+        return (`Cool name, ${name1}`)
     }
 }
 
-nameCheck("Steven")
+console.log(nameCheck("Steven"))
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
@@ -106,18 +106,18 @@ function favColorFinder (color) {
     color = String(color)
     lowerCaseColor = color.toLowerCase()
     if (lowerCaseColor === 'red') {
-        console.log("Red is a great color")
+        return "Red is a great color"
     } else if (lowerCaseColor === 'green'){
-        console.log("Green is a solid favorite color")
+        return "Green is a solid favorite color"
     } else if (lowerCaseColor === 'black') {
-        console.log("So trendy")
+        return "So trendy"
     }else {
-        console.log("You need to evaluate your favorite color choice")
+        return "You need to evaluate your favorite color choice"
     }
 }
 
-let colorRating = favColorFinder('Red')
-
+let colorRating = favColorFinder('Black')
+console.log(colorRating)
 
 ////////////////// PROBLEM 7 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl']
@@ -200,7 +200,7 @@ let loser = 'Glimmer'
 function theEliminator(contestants, loser) {
     for (h = 0; h < contestants.length; h++){
         if (contestants[h] === 'Glimmer') {
-            loser = contestants.splice(h , 1)
+            contestants.splice(h , 1)
         } 
     } console.log(contestants)
 } 
@@ -245,7 +245,6 @@ function emailCheck (email){
     } else {
         return "Must provide valid email address"
     }
-
 }
 
 console.log(emailCheck('carter.j.dooley43@gmail.com'))
