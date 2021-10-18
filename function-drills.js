@@ -259,9 +259,11 @@ console.log(emailCheck('carter.j.dooley43@gmail.com'))
 //CODE HERE
 
 function getTheChocoFroggo (savings){
-
+let froggos = (savings / 3)
+console.log(froggos)
 }
 
+totalFrogs = getTheChocoFroggo(4)
 
 ////////////////// PROBLEM 14 ////////////////////
 /*
@@ -270,15 +272,37 @@ function getTheChocoFroggo (savings){
 
 //CODE HERE
 
+function getTheChocoFroggo2 (savings){
+    let froggos2 = (savings / 3)
+    console.log(Math.round(froggos2))
+    }
+    
+    totalFrogs2 = getTheChocoFroggo2(4)
+
 
 ////////////////// PROBLEM 15 ////////////////////
-let sampleArray = [0,1,2,3,4,7,5,6,8,9]
+let sampleArray = [0,1,2,3,4,3,6,8,9]
 /*
   Write a function that takes in an array of numbers as an argument. In the body of the function, write logic to determine if the array is in ascending order. The function should return true, if it is sorted in ascending order, false if it is not. Create a variable, `arrayIsAscending` and set it equal to your function invoked. Use the sample array to test this function.
 */
 
 //CODE HERE
 
+let ifTrue = false
+
+function disArray (numArr) {
+    for (m = 1; m < numArr.length; m++) {
+        let n = m - 1
+        if (numArr[m] > numArr[n]) {
+            ifTrue = true
+        } else {
+            ifTrue = false
+            break;
+        } 
+    } console.log(ifTrue)
+}
+
+let arrayAscending = disArray(sampleArray)
 
 ////////////////// PROBLEM 16 ////////////////////
 
@@ -302,13 +326,13 @@ function pond() {
 */
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = []
+let globalScope = ["duck"]
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = []
+let bathroomScope = ["duck", "rubberDuck"]
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = []
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"]
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = []
+let pondScope = ["duck", "realDuck"]
