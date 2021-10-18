@@ -199,13 +199,13 @@ let loser = 'Glimmer'
 
 function theEliminator(contestants, loser) {
     for (h = 0; h < contestants.length; h++){
-        if (contestants[h] == 'Glimmer') {
-            loser = contestants.slice(h , 1)
-        } return contestants
+        if (contestants[h] === 'Glimmer') {
+            loser = contestants.splice(h , 1)
+        } 
     } console.log(contestants)
-}
+} 
 
-console.log(theEliminator(contestants))
+theEliminator(contestants)
 
 
 ////////////////// PROBLEM 11 ////////////////////
